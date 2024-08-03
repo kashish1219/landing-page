@@ -5,10 +5,13 @@ body{
     display: flex;
     flex-direction: column;
 }
-header, footer{
+header, footer, .top{
     background-color: #1F2937;
     display: flex;
+}
+header, footer{
     justify-content: center;
+    align-items: center;
 }
 header div,
 footer div{
@@ -31,4 +34,44 @@ header a{
 }
 .quote{
     background-color: #E5E7EB;
+}
+
+/* Have to adjust or mixup this css in the top*/
+
+.details{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    color: white;
+    justify-content: space-between;
+}
+img{
+    width:350px;
+    height: 130px;
+}
+.top{                               
+    align-items: center;            
+    justify-content: center;
+    padding: 32px;
+}
+.top-container{
+    display: flex;
+    min-width:800px;
+    justify-content: space-between;
+}
+.top-container .title{
+    font-weight: bolder;
+    font-size: 32px
+}
+.top-container .discription{
+    font-size: 12px;
+}
+.top-container .sign-up{
+    background-color: #3882f6;
+    font-weight: bold;
+    color: white;
+    font-size: 8px;
+    width: 60px;
+    padding: 5px;
+    
 }
