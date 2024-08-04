@@ -13,8 +13,12 @@ header, footer{
     justify-content: center;
     align-items: center;
 }
+
 header div,
-footer div{
+footer div,
+.top,
+.alumni,
+.pics{
     display: flex;
     gap:16px;
     min-width:800px;
@@ -45,13 +49,22 @@ header a{
     color: white;
     justify-content: space-between;
 }
-img{
+.alumni{
+    flex-direction: column;
+}
+.top img{
     width:350px;
     height: 130px;
 }
+.alumni img{
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
+.pics .text{
+    text-align: center;
+}
 .top{                               
-    align-items: center;            
-    justify-content: center;
     padding: 32px;
 }
 .top-container{
@@ -59,7 +72,7 @@ img{
     min-width:800px;
     justify-content: space-between;
 }
-.top-container .title{
+.title{
     font-weight: bolder;
     font-size: 32px
 }
@@ -72,6 +85,5 @@ img{
     color: white;
     font-size: 8px;
     width: 60px;
-    padding: 5px;
-    
+    padding: 5px;   
 }
