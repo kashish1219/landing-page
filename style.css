@@ -27,17 +27,40 @@ footer div,
     justify-content: center;
     align-items: center;
 }
+footer{
+    padding: 32px;
+}
 .push-left{
     margin-right: auto;
     font-size: 24px;
 }
-header a{
+header a, footer{
     text-decoration: none;
     color: white;
     font-size: 12px;
 }
 .quote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #E5E7EB;
+}
+.quote .container{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    padding: 48px
+}
+.container .lines{
+    font-size: 24px;
+    font-style: italic;
+    color: #1F2937;
+    text-align: center;
+}
+.container .Author{
+    display: flex;
+    justify-content: end;
+    font-weight: bolder;
 }
 
 /* Have to adjust or mixup this css in the top*/
